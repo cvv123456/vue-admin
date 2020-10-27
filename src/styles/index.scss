@@ -1,0 +1,138 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-size: 14px;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  // height: 100%;
+  background: #f4f4ff;
+  min-height: 100%;
+  overflow-x: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus,input,button{
+  outline: none;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.inline-box{
+  display: inline-block;
+}
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+#app{
+  background: #EAEEF7;
+  // width: fit-content;
+}
+.app-container {
+  padding: 20px;
+}
+ul,ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.textright{
+  text-align: right;
+}
+.hide{
+  display: none;
+}
+.blue{
+  color: #096DD9;
+}
+button.danger{
+  padding:11px 12px;
+  border: 0;
+  border: 1px solid #F56C6C;
+  color: #F56C6C;
+  background: none;
+  border-radius: 5px;
+}
+.alertinfo{
+  color: #999999;
+}
+/* 滚动条 */
+::-webkit-scrollbar-thumb:horizontal { /*水平滚动条的样式*/
+  width: 5px;
+  background-color: #CCCCCC;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #fff; /*滚动条的背景颜色*/
+  -webkit-border-radius: 0; /*滚动条的圆角宽度*/
+}
+::-webkit-scrollbar {
+  width: 6px; /*滚动条的宽度*/
+  height: 8px; /*滚动条的高度*/
+  max-height: 15px;
+}
+::-webkit-scrollbar-thumb:vertical { /*垂直滚动条的样式*/
+  height: 10px;
+  background-color: #096DD9;
+  -webkit-border-radius: 4px;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 2px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover { /*滚动条的hover样式*/
+  height: 10px;
+  background-color: #096DD9;
+  -webkit-border-radius: 4px;
+}
